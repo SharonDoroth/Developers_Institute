@@ -1,0 +1,62 @@
+/*Selector {
+    Property: value;
+}*/
+
+* {
+    text-align: center;
+}
+body {
+    background-image: url(background.png);
+    background-size: cover;
+}
+h2, p {
+    color: red;
+    text-align: center;
+    border: 5px solid rgb(238, 11, 238) ;
+    cursor: pointer;
+}
+
+p {
+    line-height: 50px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 150%;
+    font-family: 'Gloock', serif;
+font-family: 'Rubik Iso', cursive;
+}
+p {
+    color: pink;
+}
+p {
+    color: rgb(213, 231, 213);
+}
+
+img {
+    float: left;
+}
+
+footer {
+    clear: both;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+.webtext {
+    border: 5px dashed green;
+}
+
+.active {
+    color: red;
+}
+
+#div1 {
+    background: rgba(250,140, 146, 0.3);
+}
+
+#div2 {
+    background: rgba(0,140, 146, 0.3);
+}
