@@ -1,0 +1,60 @@
+.content {
+    display: flex;
+    width: 200px;
+    height: 150px;
+    border: 2px dotted;
+    background-color: green;
+    margin-bottom: 20px;
+}
+p {
+    font-style: oblique;
+    text-decoration: underline;
+    background-color: rgb(56, 169, 56);
+    border-radius: 50px black;
+    margin: 1%; 
+    padding: 10px;
+}
+
+.flag {
+    width: 200px;
+    height: 150px;
+    border: 1px solid ;
+    display: flex;
+}
+
+.blue {
+    background-color: red;
+    width: 67px;
+    height: 150px;
+    padding: auto;
+}
+.white {
+    background-color: white;
+    width: 67px;
+    height: 150px;
+    padding: auto;
+}
+
+.red {
+    background-color: blue;
+    width: 67px;
+    height: 150px;
+    padding: auto;
+}
+
+.text {
+    background-color: blue;
+}
+
+.text1 {
+    background-color: pink;
+    color: white;
+}
+
+.text2 {
+    display: flex;
+    border: 2px solid black;
+    background-color: lightblue;
+    padding: 100px;
+    margin: 100px;
+}
