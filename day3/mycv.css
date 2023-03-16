@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+body {
+    background-color: gray;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 1000%;
+    background: gray;
+    margin: 1px;
+    box-shadow: 0 50px 100% rgb(165, 163, 163);
+    border-left: 50px solid rgb(165, 163, 163);
+    border-right: 50px solid rgb(165, 163, 163);
+}
+
+.container .top {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px;
+    padding-bottom: 0;
+}
+.container .top .img1 {
+    position: relative;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.container .top .img1 .box {
+    position: relative;
+    width: 100%;
+    min-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 0;
+}
+
+.container .box .top .img1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .top .profile {
+    position: relative;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.container .top .profile span {
+    position:relative;
+    font-size: 0.5em;
+    font-weight: 300;
+    left: 10px;
+    top: 20px;
+}
+
+.container .contentbox {
+    position: relative;
+    min-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 40px 40px;
+}
+
+.container .contentbox .h3 {
+    border-left: 10px solid wheat;
+    padding-left: 1opx;
+    line-height: 1em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    margin-top: 50px;
+
+}
+
+.container .contentbox ul {
+    position: relative;
+    margin: 10px 0;
+}
+
+.container .contentbox ul li {
+    list-style: none;
+    margin: 25px 0;
+    line-height: 1em;
+    cursor: pointer;
+    display: flex;
+}
+
+.container .contentbox ul li ion-icon {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: brown;
+}
+
+.container .contentbox ul .education {
+    flex-direction: column;
+    margin: 25px 0;
+}
+
+h5 {
+    color: brown;
+}
+
+h4 {
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+h6 {
+    color: rgb(84, 82, 82);
+    font-weight: 300;
+    font-size: 0.1em;
+}
+
+.language li {
+    flex-direction: column;
+}
+
+.language li span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.language .percent {
+    position: relative;
+    width: 100%;
+    background-color: aliceblue;
+    height: 6px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: block;
+    overflow: hidden;
+}
+
+.language .percent div {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: brown;
+}
+
+p {
+    font-style: 300;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.rightside {
+    padding-left: 40px;
+}
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+.about .box .year_company {
+    min-width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
