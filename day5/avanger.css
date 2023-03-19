@@ -1,0 +1,38 @@
+body {
+    background-image: url("https://cdn.britannica.com/73/182873-050-E1C686F4/Chris-Hemsworth-Thor-Thor-The-Dark-World.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.logo {
+    height: 60px;
+}
+
+li {
+    display: inline-block;
+    float: right;
+    color: white;   
+    padding: .5em;
+    text-decoration: none;
+}
+
+nav {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    padding: 110px;
+}
+
+p {
+    font-family: Georgia, cursive;
+    font-size: 20px;
+    padding: 05px;
+    margin: 20px;
+}
+
+@media screen {
+    max-width: 1280px;
+    min-height: 480px;
+}

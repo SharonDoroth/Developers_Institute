@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    font-family: times new roman;
+}
+
+html,body {
+    margin: 20px;
+    padding: 0;
+    background-image: url(https://e7.pngegg.com/pngimages/844/568/png-clipart-blue-watercolor-background-ink-abstract.png);
+
+}
+
+.header-1 {
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2em 9%;
+}
+
+.header-1 .search-box-container {
+    display: flex;
+    height: 5rem;
+}
+
+.header-1 .search-box-container #search-box {
+    height: 10%;
+    width: 50%;
+    padding: 1rem;
+    font-size: 20px;
+    color: black;
+    border: .1rem solid black;
+    text-transform: none;
+}
+
+.header-1 .search-box-container label {
+    height: 100%;
+    width: 8rem;
+    font-size: 2.5rem;
+    line-height: 5rem;
+    color: rgb(1, 1, 1);
+    background: var(--green);
+    text-align: center;
+}
+
+.header-1 .search-box-container label:hover {
+    background: var(--black);
+}
+
+i {
+    text-align: left;
+    float: left;
+    size: 20px;
+    padding: 3px;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: right;
+    font-size: 1.5em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.shopping-name {
+    text-align: center;
+    margin: 0;
+    font-size: 5em;
+    font-weight: normal;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.home-header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.signup-box {
+    width: 360px;
+    height: 620px;
+    margin: auto;
+}
+
+.signup {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.register1 {
+    text-align: center;
+}
+
+.form1 {
+    width: 200px;
+    margin-left: 20px;
+}
+
+.form1 .label1 {
+    display: flex;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.form1 .input1{
+    width: 200%;
+    padding: 7%;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+
+.input1[type="button"] {
+    width: 400px;
+    height: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: aquamarine;
+    color: white;
+    font-size: 20px;
+}
+
+.p1 {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 15px;
+}
+
+.p2 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: 20%;
+}
+
+.p2 a {
+    color: aqua;
+}
+
+.main-footer {
+    background-image:url(https://thumbs.dreamstime.com/b/aerial-view-sea-waves-sandy-beach-140754744.jpg);
+    background-blend-mode: lighten;
+    background-size: cover;
+    padding-bottom: 10px;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+}
+
+.main-footer-container ul {
+    text-align: right;
+}
+
+@media only screen and (max-width: 1280px) {
+    width: 25%;
+    float: left;
+}
