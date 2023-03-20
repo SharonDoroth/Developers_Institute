@@ -1,0 +1,83 @@
+.container {
+    display: grid;
+    grid-gap:20px;
+    grid-template-areas: 
+    "a a a  a a a  a a a"
+    "b b b  c c c  d d d"
+    "b b b  e e e  e e e"
+    "f f f  f f f  g g g"
+    "h h h  h h h  h h h";
+}
+
+        .box1 { 
+            grid-area: a;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+            background-color: purple;
+         }
+
+        .box2 { 
+            grid-area: b;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+            background-color: darkblue;
+        }
+
+        .box3 { 
+            grid-area: c;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+            background-color: darkblue;
+        }
+
+        .box4 {
+            grid-area: d;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+            background-color: aquamarine;
+        }
+
+        .box5 { 
+            grid-area: e;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+            background-color: rgb(160, 118, 199);
+        }
+
+        .box6 { 
+            grid-area: f;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+            background-color: purple;
+        }
+
+        .box7 {
+            grid-area: g;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+            background-color: darkblue;
+        }
+
+        .box8 { 
+            grid-area: h;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+            background-color: darkblue;
+        }
+    

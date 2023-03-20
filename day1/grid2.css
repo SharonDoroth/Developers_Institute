@@ -1,0 +1,84 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7,1fr);
+    grid-column-gap: 20px;
+    grid-row-gap:20px;
+}
+
+        .box1 { 
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+            background-color: blue;
+            grid-area: 1 / 1 / 1 / 5;
+         }
+
+        .box2 { 
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+            background-color: black;
+            grid-area: 2 / 3 / 4 / 5; 
+        }
+
+        .box3 { line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+            background-color: brown;
+            grid-area: 3 / 1 / 2 / 3; 
+        }
+
+        .box4 { line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+            background-color: blueviolet;
+            grid-area: 3 / 1 / 6 / 3; 
+        }
+
+        .box5 { line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+            background-color: aqua;
+            grid-area: 6 / 3 / 4 / 5; 
+        }
+
+        .box6 { 
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+            background-color: chartreuse;
+            grid-area: 6 / 1 / 7 / 4; 
+        }
+
+        .box7 {
+            line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+            background-color: bisque;
+            grid-area: 6 / 4 / 7 / 5; 
+        }
+
+        .box8 { line-height: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+            background-color: tomato;
+            grid-area: 7 / 1 / 8 / 5; 
+        }
+    

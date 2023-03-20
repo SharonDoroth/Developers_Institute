@@ -1,0 +1,29 @@
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.a {
+    background-color: rgb(225, 0, 255);
+    text-align: center;
+    color: white;
+    height: 80px;
+    flex-grow: 1;
+}
+
+.b {
+    background-color: aqua;
+    text-align: center;
+    color: white;
+    height: 80px;
+    flex-grow: 2;
+}
+
+.c {
+    background-color: salmon;
+    color: white;
+    height: 80px;
+    flex-grow: 3;
+    text-align: center;
+}

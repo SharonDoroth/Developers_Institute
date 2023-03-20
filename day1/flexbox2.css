@@ -1,0 +1,23 @@
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.a , .c {
+    background-color: aqua;
+    text-align: center;
+    color: white;
+    height: 50px;
+    flex-grow: 1;
+}
+
+.b {
+    background-color: aqua;
+    text-align: center;
+    color: white;
+    width: 200px;
+    height: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-self: flex-end;
+}

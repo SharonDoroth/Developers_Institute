@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    grid-template-columns: 100px 400px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-gap: 2em;
+}
+
+.box1 {
+    background-color: salmon;
+}
+.box2 {
+    background-color: blue;
+}
+
+.box3 {
+    background-color: salmon;
+}
+.box4 {
+    background-color: blue;
+}
+
+.box5 {
+    background-color: salmon;
+}
+.box6 {
+    background-color: blue;
+}
+
+.box7 {
+    background-color: yellow;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
