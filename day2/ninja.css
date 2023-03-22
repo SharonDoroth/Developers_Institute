@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  margin: 1px;
+}
+
+.red {
+  background-color: rgb(255, 183, 0);
+}
+
+.blue {
+  background-color: rgb(255, 238, 0);
+}
+
+.green {
+  background-color: rgb(128, 83, 0);
+}

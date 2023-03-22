@@ -1,0 +1,73 @@
+body {
+    margin: auto 0;
+    font-family: arial;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 0.07;
+    margin: 0;
+}
+
+.push {
+    margin-left: auto;
+}
+
+li {
+    padding: 20px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.cover {
+    width: 30em;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
+}
+
+.box > img {
+    width: 100%;
+}
+
+.box {
+    background-color: gray;
+    padding: 130px;
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+.green {
+    background-color: greenyellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: rgb(88, 174, 232);
+}
+
+.yellow {
+    background-color: yellow;
+}

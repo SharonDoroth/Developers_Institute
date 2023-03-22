@@ -1,0 +1,30 @@
+body {
+    background-color: brown;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    width: 50px;
+    height: 50px;
+    margin: 1px;
+  }
+  
+  .white {
+    background-color: white;
+  }
+  
+  .red {
+    background-color: rgb(167, 70, 70);
+  }
+  
+  .darkred {
+    background-color: rgb(167, 70, 70);
+  }
+
+  .pink {
+    background-color: rgb(146, 38, 38);
+  }
