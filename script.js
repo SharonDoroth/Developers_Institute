@@ -1,102 +1,50 @@
- 
 Exercise1
+let x = 10;
+let y = 20;
 
-let favoriteFood = " coffee"
-let favoriteMeal = " breakfest."
-console.log(`I eat ${favoriteFood} at every ${favoriteMeal});
+if (x>y){
+    console.log('x is bigger then y');
+}
+else {
+    console.log('y is bigger then x');
+}
 
 Exercise2
+var newDog = "Chihuahua";
+let numLetters = newDog.length;
+let newDog = "Chihuahua";
 
-const myWatchedSeries = ["black mirror", "money heist", "and "+ "the big bang theory"];
-myWatchedSeries[2] = "friends";
-myWatchedSeries.push("The walking dead");
-myWatchedSeries.unshift("emily in paris");
-myWatchedSeries.splice(1, 1);
-const myWatchedSeriesSentence = `${myWatchedSeries.join(", ")}.`;
-const myWatchedSeriesLength =  myWatchedSeries.length;
-console.log(`I have watched ${myWatchedSeriesLength} series: ${myWatchedSeriesSentence}`);
-console.log(myWatchedSeries);
-console.log(myWatchedSeries[1][2])
+console.log(" The word " + newDog + " has " + numLetters + " letters.");
+console.log(newDog.toUpperCase());
+console.log(newDog.toLowerCase());
+if (newDog === "Chihuahua") {
+    console.log("I love Chihuahua,it's my favorite dog breed");
+}
+else {
+    console.log("I don't care,I prefer cats");
+}
 
 Exercise3
-let celsiusTemp = 20.0;
-let fahrenheitTemp = (celsiusTemp * 9/5) + 32; 
-console.log(celsiusTemp + "°C is " + fahrenheitTemp + "°F");
+let num = parseInt(prompt("10: "));
+if (num% 2== 0) {
+    console.log(num + "20");
+} 
+else {
+    console.log(num + "30");
+}
 
 Exercise4
+const users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"];
 
-let c;
-let a = 34;
-let b = 21;
-
-console.log(a+b)
-
-a = 2;
-
-console.log(a+b);
-
-Exercise5
-
-typeof(15)
- Prediction:number
- Actual:
-
-typeof(5.5)
- Prediction:number
- Actual:
-
-typeof(NaN)
- Prediction:number
- Actual:
-typeof("hello")
- Prediction:string
- Actual:
-
-typeof(true)
- Prediction:boolean
- Actual:
-
-typeof(1 != 2)
- Prediction:boolean
- Actual:
-
-"hamburger" + "s"
- Prediction:hamburgers
- Actual:
-
-"hamburgers" - "s"
- Prediction:NaN
-Actual:
-
-"1" + "3"
- Prediction:13
- Actual:
-
-"1" - "3"
- Prediction:-2
- Actual:
-
-"johnny" + 5
-Prediction:johnny5
-Actual:
-
-"johnny" - 5
- Prediction:NaN
- Actual:
-
-99 * "hello"
- Prediction:NaN
- Actual:
-
-1 != 1
- Prediction:false
- Actual:
-
-1 == "1"
-Prediction:true
- Actual:
-
-1 === "1"
- Prediction:false
-Actual:
-
+if (users.length === 0) {
+    console.log("no one is online");
+}
+else if (users.length === 1) {
+    console.log(users[0] + " is online");
+}
+else if (users.length === 2) {
+    console.log(users[0] + "and" + users[1] + " are online");
+}
+else {
+    console.log(users[0] + ", " + users[1] + ", and " + (users.length - 2) + " more are online")
+}
