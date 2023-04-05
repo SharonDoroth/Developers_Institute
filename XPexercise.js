@@ -1,134 +1,132 @@
-/* Exercise 1
-let people = ["Mary", "Greg", "James", "Devon"];
-let indexMary = people.indexOf("Mary"); 
-
-
-people.splice(people.indexOf("Greg"), 1);
-
-
-people[people.indexOf("James")] = "Jason";
-
-
-people.push("Ann");
-
-
-console.log(indexMary);
-
-
-let peopleCopy = people.slice(1, 3);
-
-
-console.log(people.indexOf("Foo"));
-
-
-let last = people[people.length - 1];
-
-let people = ["Mary", "Greg", "Jason", "Devon"];
-
-for (let i = 0; i < people.length; i++) {
-  console.log(people[i]);
+Exercise 1
+function infoAboutMe(){
+    name: 'Sharon';
+    age: '27';
+    hobbies: 'Dance';
 }
+console.log(infoAboutMe);
 
+function infoAboutPerson(personName, personAge,personFavoriteColor){
 
-for (let i = 0; i < people.length; i++) {
-  console.log(people[i]);
-  if (people[i] === "Jason") {
-    break;
-  }
-} 
+console.log("You name is " + personName +", you are "+ personAge +" years old, your favorite color is "+ personFavoriteColor+ ".");
+}
+infoAboutPerson("David", 45, "blue");infoAboutPerson("Josh", 12, "yellow");
 
-Exercise 2
-let colors = ['red','blue','green','black'];
-for (let i = 0; i < colors.length; i++) {
-    console.log(`My #${i+1} choise is ${colors[i]}`);
-} 
+Exercise 2  
+function calculateTip(){
 
-Exercise 3
+    let bill = parseFloat(prompt("Amount of the bill:"));
 
-let num;
+    let tipPercent;
+    if (bill <50) {
+        tipPercent = 0.2;
+    } else if (bill >= 50 && bill <= 200) {
+        tipPercent = 0.15;
+    } else{
+        tipPercent = 0.1;
+    }
+    let tipAmount = bill * tipPercent;
+    let totalAmount = bill + tipAmount;
 
-do {
-  num = prompt("Please enter a number:");
-  console.log(`You entered: ${num}`);
-} while (typeof num === "string" && parseInt(num) < 10);
+    console.log("Tip amount: $" + tipAmount.toFixed(2));
+    console.log("Total amount: $" + totalAmount.toFixed(2));
+}
+calculateTip();
 
+Exercise 3 
+function isDivisible(sharon) {
+    for (let i = 0; i <= 500; i++){
+        if (i % sharon === 0){
+            console.log(i + " is divisible by " + sharon);
+        }
+    }
+}
+isDivisible(24);
 
 Exercise 4
 
-const building = {
-    numberOfFloors: 4,
-    numberOfAptByFloor: {
-        firstFloor: 3,
-        secondFloor: 4,
-        thirdFloor: 9,
-        fourthFloor: 2,
-    },
-    nameOfTenants: ["Sarah", "Dan", "David"],
-    numberOfRoomsAndRent:  {
-        sarah: [3, 990],
-        dan:  [4, 1000],
-        david: [1, 500],
-    },
-  };
-  
-  console.log(`The building has ${building.numberOfFloors} floors.`);
-  
-  console.log(`There are ${building.numberOfAptByFloor.firstFloor} apartments on the first floor and ${building.numberOfAptByFloor.thirdFloor} apartments on the third floor.`);
-  
-  const secondTenant = building.nameOfTenants[1];
-  const secondTenantRooms = building.numberOfRoomsAndRent[secondTenant][0];
-  console.log(`${secondTenant} has ${secondTenantRooms} rooms in their apartment.`);
-  const sarahRent = building.numberOfRoomsAndRent.sarah[1];
-const davidRent = building.numberOfRoomsAndRent.david[1];
-const danRent = building.numberOfRoomsAndRent.dan[1];
+ const stock =  {
+    banana: 6,
+    apple: 0,
+    pear: 12,
+    orange: 32,
+    blueberry: 0
+ }
+ console.log()
+ const prices = {
+    banana: 4,
+    apple: 2,
+    pear: 1,
+    orange: 1.5,
+    blueberry:10
 
-if (sarahRent + davidRent > danRent) {
-  building.numberOfRoomsAndRent.dan[1] = 1200;
+};
+let shoppingList = ["banana","orange","apple","blueberry"];
+function myBill(){
+    let total = 0;
+    for(let item in shoppingList) {
+        let element = shoppingList[item];
+        console.log(element);
+        let inStock = stock[element];
+        console.log(inStock);
+        if (inStock > 0){
+            let itemPrice = prices[element];
+            console.log(itemPrice);
+            total += itemPrice;
+        }
+    }
+    return total;
 }
 
-console.log(building.numberOfRoomsAndRent.dan[1]);
-  
-//Exercise 5
+console.log("total=",myBill());
 
-const family = {
-    father: "John",
-    mother: "Mary",
-    son: "David",
-    daughter: "Emily",
-  };
-  
-  for (let key in family) {
-    console.log(key);
-  }
-  
-  for (let key in family) {
-    console.log(family[key]);
-  }
-  
+Exercise 5
 
-  //Exeecise 6
+function changeEnough (itemPrice, amountOfChange) {
+    let sum = calculateSum (amountOfChange)
+    if (sum > itemPrice ){
+        return true
+    }
+    else {
+        return false
+    }
+}
 
-  const details = {
-    my: 'name',
-    is: 'Rudolf',
-    the: 'raindeer'
-  };
-  
-  let sentence = "";
-  
-  for (let key in details) {
-    sentence += details[key] + " ";
-  }
-  
-  console.log(sentence.trim());
-*/  
+function calculateSum(arr){
+let sum = 0
+for (let i = 0; i < arr.length;i++){
+    let coinValue
+    const numberOfCoins = arr[i]
+    if(i === 0){coinValue = 0.25}
+    if(i === 1){coinValue = 0.10}
+    if(i === 2){coinValue = 0.05}
+    if(i === 3){coinValue = 0.01}
+    console.log("total coins ",numberOfCoins,"that have a value of" ,coinValue)
 
-//Exercise 7
+    sum = sum + numberOfCoins * coinValue
+    }  
+    return sum
+}
+console.log(changeEnough(0.75, [0,0,20,5]))
 
-const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+Exercise 6 
 
-const firstLetters = names.map(name => name.charAt(0)); 
-const sortedLetters = firstLetters.sort(); 
-const societyName = sortedLetters.join(''); 
-
-console.log(societyName); 
+function hotelCost(){
+let isANumber = true
+while (isANumber){
+    answer = prompt("How long you would like to stay in our hotel?")
+    if(isNaN(answer)){
+        alert('Please try again')
+    }
+    else {
+        isANumber = false
+const numberOfNigths = Number(answer)
+const costPerNigth = 140
+const totalPrice = numberOfNigths * costPerNigth
+return totalPrice
+console.log('Total price:', totalPrice)
+    } 
+}
+}
+let ret = hotelCost()
+console.log(ret);
